@@ -8,4 +8,5 @@ with open("day54totals.csv") as file:
         total += float(row["Cost"])*float(row["Quantity"])
         print (row)
     print(f"Total: {total}")
+    print()
 
