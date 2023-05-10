@@ -12,7 +12,7 @@ except:
 def add():
   time.sleep(1)
   os.system("cls")
-  name = input("Name > ")
+  name = input("aName > ")
   date = input("Due Date > ")
   priority = input("Priority > ").capitalize()
   row = [name, date, priority]
