@@ -11,7 +11,7 @@ except:
 
 def add():
   time.sleep(1)
-  os.system("cls")
+  os.system("clear")
   name = input("Name > ")
   date = input("Due Date > ")
   priority = input("Priority > ").capitalize()
@@ -21,7 +21,7 @@ def add():
 
 def view():
   time.sleep(1)
-  os.system("cls")
+  os.system("clear")
   options = input("1: All\n2: By Priority\n> ")
   if options=="1":
     for row in todo:
@@ -41,7 +41,7 @@ def view():
 
 def edit():
   time.sleep(1)
-  os.system("cls")
+  os.system("clear")
   find = input("Name of todo to edit > ")
   found = False
   for row in todo:
@@ -87,7 +87,7 @@ while True:
           os.makedirs("day55backups")
         except:
           pass
-        name = f"backup{random.randint(1,1000).txt}" 
+        name = f"backup{random.randint(1,1000)}.txt" 
         os.popen(f"cp day55todo.txt day55backups/{name}")
     
     f = open("day55todo.txt", "w") 
