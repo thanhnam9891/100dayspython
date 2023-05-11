@@ -3,6 +3,7 @@ import os,time,csv
 songlist = {}
 artists = []
 songs = []
+mydir = 'day56dir'
 
 if os.path.exists('day56dir') == False:
     os.makedirs("day56dir")
