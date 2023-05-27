@@ -4,7 +4,7 @@ class job():
         self.salary=salary
         self.workinghour=workinghour
 
-    def show(self):
+    def print(self):
         print(f"Job title:{self.name}\nSalary: {self.salary}\nWorking Hour:{self.workinghour} hours")
 
 class doctor(job):
@@ -15,7 +15,7 @@ class doctor(job):
         self.speciality=speciality
         self.year = year
     
-    def display(self):
+    def print(self):
         print(f"Job title:{self.name}\nSalary: {self.salary}\nWorking Hour:{self.workinghour} hours\nYear:{self.year}")
 
     
@@ -26,12 +26,13 @@ class teacher(job):
         self.workinghour = "All of them"
         self.subject = subject
         self.position= position
-    def display(self):
+
+    def print(self):
         print(f"Job title:{self.name}\nSalary: {self.salary}\nWorking Hour:{self.workinghour} hours\nSubject: {self.subject}\nPosition: {self.position}")
 
 lawyer = job("Lawyer","600,000 USD",100)
-lawyer.show()
+lawyer.print()
 compteacher = teacher("Computer Science","Classroom Teacher")
-compteacher.display()
+compteacher.print()
 doctor = doctor("Pediatric Consultant",7)
-doctor.display()
+doctor.print()
